@@ -5,4 +5,4 @@
 - User Management: Provides endpoints to get all users, delete a user by ID, and update a user's username. These actions require the user to be authenticated and, in some cases, to be the owner of the account being modified.
 - The project uses middleware to handle authentication and authorization, ensuring that only authenticated users can access certain endpoints and that users can only modify their own data. It also connects to a MongoDB database to store user information securely.
 
-# Based on Youtube Tutorial: https://www.youtube.com/watch?v=b8ZUb_Okxro
+### Based on Youtube Tutorial: https://www.youtube.com/watch?v=b8ZUb_Okxro
