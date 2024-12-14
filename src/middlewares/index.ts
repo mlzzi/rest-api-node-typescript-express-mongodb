@@ -35,7 +35,7 @@ export const isOwner = async (req: express.Request, res: express.Response, next:
 // Middleware to check if the user is authenticated
 export const isAuthenticated = async (req: express.Request, res: express.Response, next: express.NextFunction) => {
     try {
-        const sessionToken = req.cookies['MURILO-AUTH'];
+        const sessionToken = req.cookies['DEFAULT-AUTH'];
 
         // If session token is not found in the cookies
         if (!sessionToken) {

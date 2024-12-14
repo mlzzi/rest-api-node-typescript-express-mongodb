@@ -37,7 +37,7 @@ server.listen(PORT, () => {
 });
 
 // MongoDB connection URL
-const MONGO_URL = '' // Insert MongoDB URL
+const MONGO_URL = 'mongodb+srv://<YOUR-USERNAME>:<YOUR-PASSWORD>@cluster0.or2g8.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0' // Insert MongoDB URL, add your username and password
 
 // Set mongoose to use JavaScript Promises
 mongoose.Promise = Promise;

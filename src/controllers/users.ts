@@ -19,6 +19,22 @@ export const getAllUsers = async (req: express.Request, res: express.Response) =
     }
 };
 
+// Function to get a user by ID
+export const getUserById = async (req: express.Request, res: express.Response) => {
+    try {
+        const { id } = req.params;
+        const user = await getUsersById(id);
+        if (!user) {
+            res.sendStatus(404); // Not Found
+            return;
+        }
+        res.status(200).json(user);
+    } catch (error) {
+        console.log(error);
+        res.sendStatus(400);
+    }
+};
+
 // Function to delete a user by ID
 export const deleteUser = async (req: express.Request, res: express.Response) => {
     try {
